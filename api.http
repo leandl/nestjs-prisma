@@ -1,0 +1,30 @@
+GET http://localhost:3000/book
+Content-Type: application/json
+
+
+##################################
+
+POST http://localhost:3000/book
+Content-Type: application/json
+
+{
+  "title": "clean code",
+  "description": "Clean code is a reader-focused developmd maintai",
+  "bar_code": "879745565211"
+}
+
+##################################
+
+PUT http://localhost:3000/book/18c9f6e0-30f2-41b5-8be6-f71fa484ea4d1
+Content-Type: application/json
+
+{
+  "title": "clean code",
+  "description": "New description",
+  "bar_code": "879745565211"
+}
+
+##################################
+
+DELETE http://localhost:3000/book/4525a56f-f4fe-48a6-89e6-fd19674aa8b5
+Content-Type: application/json
